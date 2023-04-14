@@ -306,7 +306,6 @@ img{
     line-height: 22px;
 }
 .container_foot{
-    width: 100%;
     overflow:hidden;
     height: auto;
     background: rgba(236, 235, 255, 0.6);
@@ -372,7 +371,16 @@ img{
     background: #6C63FF;
 }
 
+@media screen and (max-width: 1200px) {
+    .container_foot{
+        width: 1180px;
+        margin: 0 auto;
+        margin-top: 100px;
+        height: auto;
+        background: rgba(236, 235, 255, 0.6);
+    }
 
+}
 @media screen and (max-width: 585px) {
     html,body
 {
@@ -402,8 +410,8 @@ img{
         font-family: 'Playfair Display';
         font-style: normal;
         font-weight: 700;
-        font-size: 46px;
-        line-height:46px;
+        font-size: 56px;
+        line-height: 56px;
         letter-spacing: -1px;
         color: #2F2E41;
     }
@@ -411,8 +419,8 @@ img{
         font-family: 'Open Sans';
         font-style: normal;
         font-weight: 400;
-        font-size: 15px;
-        line-height: 28px;
+        font-size: 20px;
+        line-height: 30px;
         color: #9893A3;
     }
     .clients{
@@ -471,8 +479,10 @@ img{
         border-radius: 2px;
     }
     .frame{
-        width: 90%;
-        height: 100px;
+        width: auto;
+        height: auto;
+        justify-content: center;
+        align-items: center;
     }
     .frame h1{
         font-family: 'Playfair Display';
@@ -484,7 +494,6 @@ img{
         color: #FFFFFF;
     }
     .color_btn_primary{
-        box-sizing: border-box;
         width: 136px;
         background: #6C63FF;
         border: 1px solid #6C63FF;
@@ -497,7 +506,12 @@ img{
         font-size: 16px;
         line-height: 22px;
     }
-
+    .container_foot{
+        width: 100%;
+        overflow:hidden;
+        height: auto;
+        background: rgba(236, 235, 255, 0.6);
+    }
     .content{
         margin-left: 15%;
         gap: 65px;
