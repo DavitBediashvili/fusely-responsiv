@@ -357,6 +357,7 @@ img{
 .desktop{
     display: block;
 }
+
 .box{
     flex-direction: column;
     width: 25px;
@@ -382,6 +383,152 @@ img{
         background: rgba(236, 235, 255, 0.6);
     }
 
+}
+@media screen and (max-width: 800px) {
+    html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+    .burger{
+        display: flex;
+    }
+    .mobile{
+        display: block;
+   }
+    .desktop{
+       display: none;
+   }
+    .container{
+        width: 90%;
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .banner_content_wrapper h1{
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: -1px;
+        color: #2F2E41;
+    }
+    .banner_content_wrapper p{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: #9893A3;
+    }
+    .clients{
+        width: 100%;
+        gap: 12px;
+        justify-content: center;
+    }
+    .pricing-card{
+        padding: 0px;
+        gap: 45px;
+        width: 90%;
+        height: 502px;
+        justify-content: center;
+    }
+    .plan{
+        gap: 90px;
+        height: 502px;
+        justify-content: center;
+        flex-direction: row;
+        
+    }
+    .pricing{
+        flex-direction: row;
+        justify-content: center;
+        padding: 46px 88px;
+        gap: 30px;
+        width: 40%;
+        height: 402px;
+        background: rgba(236, 235, 255, 0.3);
+        border-radius: 2px;
+    }
+    .pricing-color{
+        flex-direction: row;
+        justify-content: center;
+        padding: 70px 88px;
+        gap: 40px;
+        width: 40%;
+        height: 502px;
+        background: #6C63FF;
+        border-radius: 2px;
+    }
+    .choose{
+        justify-content:center;
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 46px;
+        line-height:46px;
+        letter-spacing: -1px;
+        color: #2F2E41;
+        
+    }
+    .dark-rect{
+        width: 90%;
+        height: 396px;
+        background: #2F2E41;
+        border-radius: 2px;
+    }
+    .frame{
+        width: auto;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .frame h1{
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        text-align: center;
+        font-size: 40px;
+        line-height: 46px;
+        color: #FFFFFF;
+    }
+    .color_btn_primary{
+        width: 136px;
+        background: #6C63FF;
+        border: 1px solid #6C63FF;
+        border-radius: 2px;
+        text-align: center;
+        color: #ffffff;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .container_foot{
+        width: 100%;
+        overflow:hidden;
+        height: auto;
+        background: rgba(236, 235, 255, 0.6);
+    }
+    .content{
+        margin-left: 9%;
+        gap: 65px;
+        width: 90%;
+        height: auto;
+    }
+    .logos{
+        display: flex;
+        width: auto;
+        margin-top: 7px;
+        gap: 7px;
+        justify-content: center;
+    }
 }
 @media screen and (max-width: 585px) {
     html,body
@@ -448,7 +595,7 @@ img{
         justify-content: center;
         padding: 46px 88px;
         gap: 30px;
-        width: 100%;
+        width: 40%;
         height: 402px;
         background: rgba(236, 235, 255, 0.3);
         border-radius: 2px;
@@ -458,7 +605,7 @@ img{
         justify-content: center;
         padding: 70px 88px;
         gap: 40px;
-        width: 100%;
+        width: 40%;
         height: 502px;
         background: #6C63FF;
         border-radius: 2px;
@@ -515,8 +662,9 @@ img{
         background: rgba(236, 235, 255, 0.6);
     }
     .content{
+        margin-left: 9%;
         gap: 65px;
-        width: 100%;
+        width: 90%;
         height: auto;
     }
     .logos{
